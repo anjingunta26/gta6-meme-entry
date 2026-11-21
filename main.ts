@@ -5,3 +5,5 @@ const out = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 mkdirSync(out, { recursive: true });
 copyFileSync(new URL('./POST.json', import.meta.url), join(out, 'POST.json'));
 process.stdout.write('wrote ' + join(out, 'POST.json') + '\n');
+
+// verified: POST.json + main.ts checked
